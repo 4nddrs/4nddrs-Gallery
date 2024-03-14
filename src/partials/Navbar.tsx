@@ -36,7 +36,7 @@ const Navbar = () => (
       <NavMenu>
         <h1 className='m-1' >Contact Me: </h1>
         <a
-						href='https://www.youtube.com/watch?v=2h2Sr0ZJvyE&t=800s'
+						href='https://wa.me/62650020'
 						target="_blank"
 						rel="noopener noreferrer"
 						role="link"
@@ -46,7 +46,7 @@ const Navbar = () => (
 						
 				</a>
         <a
-						href='https://www.youtube.com/watch?v=2h2Sr0ZJvyE&t=800s'
+						href='mailto:joseandres190503@gmail.com'
 						target="_blank"
 						rel="noopener noreferrer"
 						role="link"
@@ -56,7 +56,7 @@ const Navbar = () => (
 				</a>
 
         <a
-						href='https://www.youtube.com/watch?v=2h2Sr0ZJvyE&t=800s'
+						href='tel:62650020'
 						target="_blank"
 						rel="noopener noreferrer"
 						role="link"

@@ -8,7 +8,8 @@ import { RecentPosts } from '@/partials/RecentPosts';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
-import { Sponsors } from '@/partials/Sponsors';
+import { Stack } from '@/partials/Stack';
+import { Learning } from '@/partials/Learning';
 
 const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
 const sortedPosts = sortByDate(allPosts);
@@ -30,6 +31,8 @@ const { description } = AppConfig;
   
   <RecentPosts postList={lastThreePosts} />
   <!-- <CTA /> -->
-  <Sponsors />
+  <Stack />
+  <Learning />
   
 </Base>
+@/partials/Stack
