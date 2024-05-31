@@ -44,7 +44,7 @@ const Hero = () => (
 						LinkIn
 					</a>
 					<a
-						href='https://www.youtube.com/watch?v=2h2Sr0ZJvyE&t=800s'
+						href='https://github.com/JAndresMenchaca'
 						target="_blank"
 						rel="noopener noreferrer"
 						role="link"

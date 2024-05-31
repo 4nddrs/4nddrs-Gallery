@@ -19,7 +19,7 @@ const ProjectList = () => (
       <Project
         name="PYMES"
         description='The "Pymes" project aims to revolutionize business management in Bolivia through a collaborative web app, simplifying operations and boosting the online presence of small businesses.'
-        link="/"
+        link="https://github.com/anddresMenchaca/PYMES-PROYECT.git"
         img={{
           src: '/assets/images/logoInicio.png',
           alt: 'Project Web Design',
@@ -49,7 +49,7 @@ const ProjectList = () => (
         description="Dental Connect is a dental supplies management software, 
         it has a native version for Windows and a WEB version, both versions
         have a connection to the SQL-Server database."
-        link="/"
+        link="https://github.com/JAndresMenchaca/DentalConnect.git"
         img={{ src: '/assets/images/dental.png', alt: 'Project Fire' }}
         category={
           <>
@@ -74,7 +74,7 @@ const ProjectList = () => (
       <Project
         name="Nuclear Night"
         description="Nuclear Night is a 2D videogame with Pixel Art graphics, it has a single or two player mode, it has an original and very fluid gameplay."
-        link="/"
+        link="https://github.com/JAndresMenchaca/31_minutos.git"
         img={{ src: '/assets/images/player.png', alt: 'Project Maps' }}
         category={
           <>
