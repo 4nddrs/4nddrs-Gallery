@@ -1,10 +1,7 @@
-import React from 'react';
 import {
-  ColorTags,
   GradientText,
   Project,
-  Section,
-  Tags,
+  Section
 } from 'astro-boilerplate-components';
 import AstroLink from '@/components/SocialPill';
 const ProjectList = () => (
@@ -17,9 +14,27 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
+        name="Python Scripts"
+        description="A collection of Python scripts that automate tasks"
+        link="https://github.com/4nddrs/scripts.git"
+        img={{ src: '/assets/images/script1.png', alt: 'Project Python' }}
+        category={
+          <>
+            <AstroLink href="#">
+              <img src="/assets/images/python.png" alt="" width="16" height="16" />
+              Python
+            </AstroLink>
+             <AstroLink href="#">
+                <img src="/assets/images/bash_dark.svg" alt="" width="20" height="20" />
+                Bash
+            </AstroLink>
+          </>
+        }
+      />
+      <Project
         name="PYMES"
         description='The "Pymes" project aims to revolutionize business management in Bolivia through a collaborative web app, simplifying operations and boosting the online presence of small businesses.'
-        link="https://github.com/anddresMenchaca/PYMES-PROYECT.git"
+        link="https://github.com/4nddrs/PYMES-PROYECT.git"
         img={{
           src: '/assets/images/logoInicio.png',
           alt: 'Project Web Design',
@@ -44,6 +59,10 @@ const ProjectList = () => (
           </>
         }
       />
+
+
+      
+
       <Project
         name="Dental Connect"
         description="Dental Connect is a dental supplies management software, 

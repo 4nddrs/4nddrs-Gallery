@@ -12,23 +12,27 @@ const ThemeToggle = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
-
+  
       const updateTheme = () => {
         const themePreference = getThemePreference();
         const isDark =
           themePreference === "dark" ||
           (themePreference === "system" && matchMedia.matches);
-
+  
         setThemePreference(themePreference);
         document.documentElement.classList.toggle("dark", isDark);
       };
-
+  
       matchMedia.addEventListener("change", updateTheme);
-
+      updateTheme(); // Puedes llamarlo inicialmente si lo necesitas
+  
       return () => {
         matchMedia.removeEventListener("change", updateTheme);
       };
     }
+  
+    // ✅ Agrega un return vacío por si `window === undefined`
+    return;
   }, []);
 
   useEffect(() => {
